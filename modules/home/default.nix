@@ -5,7 +5,7 @@
 		./git
 		./nixvim
 		./hyprland
-		/gtk
+		./gtk
 		./quickshell
 		./stylix
 		./kitty
