@@ -38,24 +38,21 @@
 			inputs.nixpkgs.follows = "nixpkgs";
 		};
 	};
-	
-	outputs = { self, nixpkgs, home-manager, hyprland, quickshell, dms, stylix, nixvim, ... }@inputs:
+
+	outputs = { self, nixpkgs, home-manager, stylix, ... }@inputs:
 		let
+			lib = nixpkgs.lib;
 			system = "x86_64-linux";
 			username = "chan";
-			# pkgs = nixpkgs.legacyPackages.${system};
 
 			mkHost = host: path:
-				nixpkgs.lib.nixosSystem {
+				lib.nixosSystem {
 					inherit system;
 					specialArgs = { inherit self inputs username host; };
 					modules = [
 						path
 						home-manager.nixosModules.home-manager
 						stylix.nixosModules.stylix
-						{
-
-						}
 					];
 				};
 		in {

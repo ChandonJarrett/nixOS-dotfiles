@@ -1,9 +1,11 @@
-{ inputs, ... }:
+{ ... }:
 {
 	imports = [
 		./fish
 		./git
+		./nixvim
 		./hyprland
+		/gtk
 		./quickshell
 		./stylix
 		./kitty

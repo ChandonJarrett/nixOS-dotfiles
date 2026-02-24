@@ -15,6 +15,8 @@
 		wget
 		vim
 		git
+		zip
+		unzip
 	];
 
 	time.timeZone = "America/New_York";

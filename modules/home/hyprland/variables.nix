@@ -26,6 +26,6 @@
         GRIMBLAST_HIDE_CURSOR = 1;
         ELECTRON_OZONE_PLATFORM_HINT = "auto";
         TERMINAL = "kitty";
-        EDITOR = "vim";
+        EDITOR = "nvim";
     };
 }

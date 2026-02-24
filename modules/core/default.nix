@@ -1,7 +1,8 @@
-{ username, ... }:
+{ ... }:
 
 {
 	imports = [
+		./home-manager.nix
 		./bootloader.nix
 		./user.nix
 		./system.nix

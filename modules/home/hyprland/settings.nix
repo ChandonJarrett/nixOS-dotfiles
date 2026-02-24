@@ -12,10 +12,6 @@
             # no_border_on_floating = false;
         };
 
-        monitor = [
-            "eDP-1,1920x1200@59.99900,0x0,1.25"
-        ];
-
         input = {
             kb_layout = "us";
             numlock_by_default = true;

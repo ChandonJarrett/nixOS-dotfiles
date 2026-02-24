@@ -1,21 +1,23 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 {
     home.packages = with pkgs; [
         nodejs
-        
+        gcc
+
+        # Nix
+        nixd
+        nixfmt
+
         # Rust
         rustc
         cargo
         rust-analyzer
 
-        gcc
-
         # Go
         go
+        gopls
 
         # Elixir & Erlang
         elixir
-
-
     ];
 }
